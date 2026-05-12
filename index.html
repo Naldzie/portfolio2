@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ronald Francis Andalis Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@600;900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-glow"></div>
+      <div class="preloader-text">Loading</div>
+    </div>
+  </div>
+
+  <!-- Full-site animated canvas background -->
+  <canvas id="bg-shapes"></canvas>
+
+  <!-- Navigation -->
+  <nav class="nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="#about">Welcome</a></li>
+      <li><a href="#history">IT History</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO ABOUT -->
+  <header id="about" class="hero section">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <h2 class="intro">Hello, It's Me</h2>
+        <h1 class="hero-title shimmer-glow">Ronald Francis Andalis</h1>
+        <h3 class="hero-sub">And I'm a <span id="typewriter"></span><span class="cursor">|</span></h3>
+        <p class="hero-desc">Welcome to my cyber-modern portfolio! Explore my IT journey, skills, and projects—powered by glowing neon design.</p>
+        <div class="hero-buttons">
+          <a class="btn-cv" href="#contact"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+          <a class="btn-cv btn-outline" href="#projects"><i class="fa-solid fa-folder-open"></i> View Projects</a>
+        </div>
+      </div>
+      <div class="hexagon-avatar">
+        <div class="hexagon-frame">
+          <img src="assets/avatar.jpg" alt="Avatar" />
+        </div>
+        <div class="hex-glow"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HISTORY TIMELINE -->
+  <section id="history" class="section" aria-label="IT History Timeline">
+    <h2>My IT Journey</h2>
+    <div class="timeline" id="timeline">
+      <div class="timeline-card" tabindex="0">
+        <div class="timeline-icon"><i class="fa-solid fa-desktop"></i></div>
+        <div class="timeline-title">Started Young</div>
+        <div class="timeline-desc">Began learning computers and basic software from high school, exploring programs and games.</div>
+      </div>
+      <div class="timeline-card" tabindex="0">
+        <div class="timeline-icon"><i class="fa-solid fa-globe"></i></div>
+        <div class="timeline-title">Web Dev Explorer</div>
+        <div class="timeline-desc">Built responsive websites with HTML, CSS, and JavaScript, experimenting with modern themes and layouts.</div>
+      </div>
+      <div class="timeline-card" tabindex="0">
+        <div class="timeline-icon"><i class="fa-solid fa-gear"></i></div>
+        <div class="timeline-title">Programming Practitioner</div>
+        <div class="timeline-desc">Studied Python and C++ for scripting and software logic—created basic scripts and interactive apps.</div>
+      </div>
+      <div class="timeline-card" tabindex="0">
+        <div class="timeline-icon"><i class="fa-solid fa-trophy"></i></div>
+        <div class="timeline-title">Project Builder</div>
+        <div class="timeline-desc">Developed personal projects and hackathon apps. <span class="badge"><i class="fa-solid fa-star"></i></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section" aria-label="Educational Background">
+    <h2>Education</h2>
+    <div class="timeline">
+      <article class="timeline-card edu-card" tabindex="0">
+        <div class="edu-icon" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></div>
+        <h3 class="timeline-title">Camarines Sur Polytechnic Colleges (CSPC)</h3>
+        <div class="timeline-desc">
+          <strong>Degree:</strong> BS in Information Technology<br>
+          <strong>Status:</strong> Current Student (Target Graduation: 2027)<br>
+          <strong>Subjects:</strong> Web Development, Programming, Networking, Scripting
+        </div>
+      </article>
+      <article class="timeline-card edu-card" tabindex="0">
+        <div class="edu-icon" aria-hidden="true"><i class="fa-solid fa-laptop-code"></i></div>
+        <h3 class="timeline-title">Relevant Experience</h3>
+        <div class="timeline-desc">Participated in hackathons, collaborated on student app projects, and contributed to design & front-end implementations.</div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section" aria-label="Portfolio Projects">
+    <h2>Portfolio Projects</h2>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card" data-project="1" tabindex="0">
+        <div class="project-thumb">
+          <img class="project-image" src="images/project1.jpg" alt="Responsive Web Portfolio" />
+          <div class="project-overlay"><span><i class="fa-solid fa-eye"></i> View Details</span></div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+          <div class="project-title">Responsive Web Portfolio</div>
+          <div class="project-desc">An elegant cyber-modern portfolio built with animated backgrounds, neon-glow shadows, typing effects, and fully responsive layouts for all screen sizes.</div>
+          <button class="project-btn" aria-haspopup="dialog"><i class="fa-solid fa-circle-info"></i> View Details</button>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card" data-project="2" tabindex="0">
+        <div class="project-thumb">
+          <img class="project-image" src="images/project2.jpg" alt="Web-Based Registrar's Office Transaction Processing System" />
+          <div class="project-overlay"><span><i class="fa-solid fa-eye"></i> View Details</span></div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span class="tag">PHP</span><span class="tag">Laravel</span><span class="tag">MySQL</span></div>
+          <div class="project-title">Registrar's Office Transaction System</div>
+          <div class="project-desc">A web-based system for CSPC that digitizes registrar transactions—certifications, transcripts, and academic records—eliminating long queues and manual paperwork.</div>
+          <button class="project-btn" aria-haspopup="dialog"><i class="fa-solid fa-circle-info"></i> View Details</button>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card" data-project="3" tabindex="0">
+        <div class="project-thumb">
+          <img class="project-image" src="images/project3.jpg" alt="PolyClinic" />
+          <div class="project-overlay"><span><i class="fa-solid fa-eye"></i> View Details</span></div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Bootstrap</span></div>
+          <div class="project-title">PolyClinic System</div>
+          <div class="project-desc">A comprehensive healthcare management solution streamlining patient records, appointment scheduling, medical history tracking, and staff coordination for polyclinic operations.</div>
+          <button class="project-btn" aria-haspopup="dialog"><i class="fa-solid fa-circle-info"></i> View Details</button>
+        </div>
+      </div>
+
+      <!-- Project 4 — FableLearning (NEW) -->
+      <div class="project-card project-card--featured" data-project="4" tabindex="0">
+        <div class="project-thumb">
+          <img class="project-image" src="images/project4.png" alt="FableLearning Website" />
+          <div class="project-overlay"><span><i class="fa-solid fa-eye"></i> View Details</span></div>
+          <div class="project-badge-new"><i class="fa-solid fa-bolt"></i> NEW</div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span><span class="tag">Audio API</span></div>
+          <div class="project-title">FableLearning Website</div>
+          <div class="project-desc">An interactive educational story platform featuring 3 audio-narrated fables, each paired with 3 unique mini-games: Word Search, 3 Pics One Riddle, and a Spinning Wheel Quiz with 10 questions.</div>
+          <button class="project-btn" aria-haspopup="dialog"><i class="fa-solid fa-circle-info"></i> View Details</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <h2>My Skills</h2>
+    <div class="skills-list">
+      <div class="skill-item" data-percent="90">
+        <span class="skill-name"><i class="fa-brands fa-html5"></i> HTML</span>
+        <div class="skill-dot-circle"><span class="skill-percent">0%</span></div>
+      </div>
+      <div class="skill-item" data-percent="65">
+        <span class="skill-name"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+        <div class="skill-dot-circle"><span class="skill-percent">0%</span></div>
+      </div>
+      <div class="skill-item" data-percent="70">
+        <span class="skill-name"><i class="fa-brands fa-php"></i> PHP</span>
+        <div class="skill-dot-circle"><span class="skill-percent">0%</span></div>
+      </div>
+      <div class="skill-item" data-percent="87">
+        <span class="skill-name"><i class="fa-solid fa-code"></i> C++</span>
+        <div class="skill-dot-circle"><span class="skill-percent">0%</span></div>
+      </div>
+      <div class="skill-item" data-percent="49">
+        <span class="skill-name"><i class="fa-solid fa-shield-halved"></i> CyberSecurity</span>
+        <div class="skill-dot-circle"><span class="skill-percent">0%</span></div>
+      </div>
+      <div class="skill-item" data-percent="50">
+        <span class="skill-name"><i class="fa-brands fa-laravel"></i> Laravel</span>
+        <div class="skill-dot-circle"><span class="skill-percent">0%</span></div>
+      </div>
+      <div class="skill-item" data-percent="50">
+        <span class="skill-name"><i class="fa-brands fa-js"></i> JavaScript</span>
+        <div class="skill-dot-circle"><span class="skill-percent">0%</span></div>
+      </div>
+      <div class="skill-item" data-percent="47">
+        <span class="skill-name"><i class="fa-brands fa-git-alt"></i> Git</span>
+        <div class="skill-dot-circle"><span class="skill-percent">0%</span></div>
+      </div>
+      <div class="skill-item" data-percent="20">
+        <span class="skill-name"><i class="fa-brands fa-linux"></i> Linux</span>
+        <div class="skill-dot-circle"><span class="skill-percent">0%</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section" aria-label="Contact Form">
+    <h2>Contact Me</h2>
+    <div class="contact-wrap">
+      <form id="contactForm" class="contact-form" aria-label="Contact form">
+        <label for="name"><i class="fa-solid fa-user"></i> Name</label>
+        <input type="text" name="name" id="name" placeholder="Your name..." />
+        <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+        <input type="email" name="email" id="email" placeholder="your@email.com" />
+        <label for="message"><i class="fa-solid fa-message"></i> Message</label>
+        <textarea name="message" id="message" placeholder="Write your message..."></textarea>
+        <div class="contact-actions">
+          <button type="submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+        </div>
+        <p id="formMsg" style="display:none;font-weight:bold;color:var(--cyan-glow);"></p>
+      </form>
+      <div class="social-links contact-socials" aria-label="Social Links">
+        <a href="mailto:ronandalis@my.cspc.edu.ph" title="Email" class="social-icon">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email</span>
+        </a>
+        <a href="https://facebook.com/ronandalis" target="_blank" rel="noopener" title="Facebook" class="social-icon">
+          <i class="fa-brands fa-facebook-f"></i>
+          <span>Facebook</span>
+        </a>
+        <a href="https://github.com/Naldzie" target="_blank" rel="noopener" title="GitHub" class="social-icon">
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Action Button -->
+  <button id="fab" aria-label="Quick navigation"><i class="fa-solid fa-bars"></i></button>
+  <div class="fab-popup" id="fab-popup">
+    <a href="#about"><i class="fa-solid fa-user"></i> About</a>
+    <a href="#history"><i class="fa-solid fa-chart-line"></i> History</a>
+    <a href="#projects"><i class="fa-solid fa-folder"></i> Projects</a>
+    <a href="#skills"><i class="fa-solid fa-bolt"></i> Skills</a>
+    <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+  </div>
+
+  <!-- Project Modal Popup -->
+  <div id="projectModal" class="project-modal" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <span id="closeModal" class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></span>
+      <div id="modalProjectInfo"></div>
+    </div>
+  </div>
+
+  <script src="animation.js"></script>
+  <script src="enhance.js"></script>
+</body>
+</html>
